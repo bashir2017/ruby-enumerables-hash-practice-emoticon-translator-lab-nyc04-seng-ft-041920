@@ -21,7 +21,7 @@ def get_japanese_emoticon(file, emoticon)
   data = load_library(file)
   data.reduce(nil) do |memo, (key, value)|
     if value['english'] == emoticon
-      return value['japanese']
+      return value[:japanese]
     end 
     binding.pry 
   end 
@@ -33,7 +33,7 @@ def get_english_meaning(file, emoticon)
    data = load_library(file)
   data.reduce(nil) do |memo, (key, value)|
     if value['japanese'] == emoticon
-      return value['english']
+      return value[:english]
     end 
   end 
   "Sorry, that emoticon was not found"
