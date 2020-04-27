@@ -5,8 +5,8 @@ require 'yaml'
 raw_data = YAML::load_file("./lib/emoticons.yml")
 
 raw_data.reduce({}) do |memo, (key, value)|
-  memo[key] = {english : value[0], 
-               japanese : value[1]}
+  memo[key] = {:english => value[0], 
+               :japanese => value[1]}
   memo
   binding.pry 
 end 
