@@ -16,8 +16,9 @@ def load_library(path)
     new_arr
 end
 
-def get_japanese_emoticon()
+def get_japanese_emoticon(file, emoticon)
   # code goes here
+  data = load_library(file)
   
 end
 
