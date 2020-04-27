@@ -4,7 +4,12 @@ require 'yaml'
 
 raw_data = YAML::load_file("./lib/emoticons.yml")
 
-
+new_data = {}
+raw_data.reduce({}) do |memo, (key, value)|
+  memo[key] = {english : value[0], 
+               japanese : value[1]}
+  memo
+end 
 
 binding.pry 
 def load_library
