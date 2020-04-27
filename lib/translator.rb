@@ -4,9 +4,9 @@ require 'yaml'
 
 
  
-def load_library
+def load_library(path)
   # code goes here
-    raw_data = YAML::load_file("./lib/emoticons.yml")
+    raw_data = YAML::load_file(path)
 
     new_arr = raw_data.reduce({}) do |memo, (key, value)|
                  memo[key] = {:english => value[0], 
