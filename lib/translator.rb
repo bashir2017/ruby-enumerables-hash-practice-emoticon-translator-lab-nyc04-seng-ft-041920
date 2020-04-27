@@ -1,6 +1,8 @@
 # require modules here
+require 'Pry'
 require "yaml"
-raw_data = YAML.load_file
+raw_data = YAML.load_file('emoticons.yml')
+binding.Pry
 def load_library
   # code goes here
   
