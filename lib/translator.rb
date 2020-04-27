@@ -8,7 +8,6 @@ raw_data.reduce({}) do |memo, (key, value)|
   memo[key] = {:english => value[0], 
                :japanese => value[1]}
   memo
-  binding.pry 
 end 
 
 binding.pry 
