@@ -24,6 +24,7 @@ def get_japanese_emoticon(file, emoticon)
       return value['japanese']
     end 
   end 
+  binding.pry 
   "Sorry, that emoticon was not found"
 end
 
