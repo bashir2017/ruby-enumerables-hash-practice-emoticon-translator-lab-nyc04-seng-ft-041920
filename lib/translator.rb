@@ -2,17 +2,17 @@
 require 'pry'
 require 'yaml'
 
-
- 
-def load_library
-  # code goes here
   raw_data = YAML::load_file("./lib/emoticons.yml")
 
-  raw_data.reduce({}) do |memo, (key, value)|
+  new_arr = raw_data.reduce({}) do |memo, (key, value)|
     memo[key] = {:english => value[0], 
                :japanese => value[1]}
     memo
   end 
+
+ 
+def load_library
+  # code goes here
   
 end
 
