@@ -1,6 +1,6 @@
 # require modules here
-require('Pry')
-require("yaml")
+require 'pry'
+require "yaml"
 raw_data = YAML.load_file('emoticons.yml')
 binding.Pry
 
