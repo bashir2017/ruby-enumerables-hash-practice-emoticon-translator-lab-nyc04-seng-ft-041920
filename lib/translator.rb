@@ -19,6 +19,9 @@ end
 def get_japanese_emoticon(file, emoticon)
   # code goes here
   data = load_library(file)
+  data.reduce(nil) do |memo, (key,)|
+    
+  end 
   
 end
 
