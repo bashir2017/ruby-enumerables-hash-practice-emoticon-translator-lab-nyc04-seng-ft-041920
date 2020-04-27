@@ -20,7 +20,9 @@ def get_japanese_emoticon(file, emoticon)
   # code goes here
   data = load_library(file)
   data.reduce(nil) do |memo, (key, value)|
-    value[japanese] == v
+    if value[english] == emoticon
+      return value[japanese]
+    end 
   end 
   
 end
