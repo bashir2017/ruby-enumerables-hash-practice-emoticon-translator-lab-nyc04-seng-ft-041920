@@ -4,8 +4,6 @@ require 'yaml'
 
 
  
-
-binding.pry 
 def load_library
   # code goes here
   raw_data = YAML::load_file("./lib/emoticons.yml")
