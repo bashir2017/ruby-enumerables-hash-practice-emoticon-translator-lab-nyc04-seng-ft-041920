@@ -10,6 +10,7 @@ require 'yaml'
     memo
   end 
 
+ binding.pry 
  
 def load_library
   # code goes here
